@@ -55,7 +55,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-btn" type="button">Заказать услугу</button>
+            <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!------Особенности------>
@@ -112,13 +112,16 @@
             <h2 class="item-text">Чем мы занимаемся</h2>
             <ul class="list container-img">
                 <li class="item-img">
-                    <img src="./images/box1.png" alt="Планирование" width="370">
+                    <img src="./images/box1.jpg" alt="Планирование" width="370">
+                    <p class="item-img-text">Десктопные приложения</p>
                 </li>
                 <li class="item-img">
                     <img src="./images/box2.png" alt="Современные технологии" width="370">
+                    <p class="item-img-text">Мобильные приложения</p>
                 </li>
                 <li class="item-img">
                     <img src="./images/box3.png" alt="Внимание к деталям" width="370">
+                    <p class="item-img-text">Дизайнерские решения</p>
                 </li>
             </ul>
             </div>
@@ -370,6 +373,7 @@
                 </li>
             </ul>
         </div>
+        <!-- -------------modal------------- -->
         <div class="social-box">
             <p class="social-text">присоединяйтесь</p>
             <ul class="list social-links">
@@ -409,5 +413,15 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" wight="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
